@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 4</title>
+	<style type="text/css">
+		.container {
+			background-color:steelblue;
+			margin: 50px auto;
+			display: flex;
+			flex-direction: column;
+		}
+		.container__box {
+	   	 	display: flex;
+    	  	flex-direction: row;
+	      	width: 100%;
+		}
+		.container__item {
+			background-color: #FF659F;
+			color: #FFF;
+			/*hace que todos los elementos se vuelvan del mismo ancho, ya que están trabajando desde una flex-basis de 0 permitiendo que todo el espacio sea distribuido uniformemente.*/
+			flex-grow : 1; /*this means that the div will grow in same proportion as the window-size*/
+			flex-shrink : 1; /*this means that the div will shrink in same proportion as the window-size */
+			flex-basis : 0; /*this means that the div does not have a starting value as such and will take up screen as per the screen size available for.e.g:- if 3 divs are in the wrapper then each div will take 33%.*/	
+			font-family: monospace;
+			font-size: 2rem;
+			font-weight: bold;
+			margin: 20px;
+			padding: 10px 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="container__box">
+			<div class="container__item">#instaday</div>
+			<div class="container__item">#goodday</div>
+			<div class="container__item">#beautyplace</div>
+		</div>
+		<div class="container__box">
+			<div class="container__item">#friends</div>
+			<div class="container__item">#weekend</div>
+			<div class="container__item">#sun</div>
+		</div>
+	</div>
+</body>
+</html>
